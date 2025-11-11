@@ -1,0 +1,12 @@
+[workspace]
+channels = ["conda-forge"]
+name = "opencv_module-dev1"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+pip = ">=25.2,<26"
+pyinstaller = ">=6.16.0,<7"
