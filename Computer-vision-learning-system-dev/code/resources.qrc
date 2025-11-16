@@ -1,0 +1,19 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="/">
+      <file>images/eye.jpg</file>
+      <file>images/photo11.png</file>
+      <file>images/photo12.png</file>
+      <file>images/photo13.png</file>
+      <file>images/photo14.png</file>
+      <file>images/photo15.jpg</file>
+      <file>images/photo21.png</file>
+      <file>images/photo22.png</file>
+      <file>images/photo23.png</file>
+      <file>images/photo31.png</file>
+      <file>images/photo32.png</file>
+      <file>images/photo33.png</file>
+      <file>images/photo41.png</file>
+      <file>images/photo42.png</file>
+  </qresource>
+</RCC>
