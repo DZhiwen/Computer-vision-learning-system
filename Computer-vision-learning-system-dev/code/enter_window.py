@@ -915,7 +915,7 @@ class EnterWindow(QWidget):
         # --------------------------
         # 6. 新增主观题提交按钮（模仿选择题提交按钮样式）
         # --------------------------
-        subjective_submit_btn = QPushButton("Отправить ответ（提交）")
+        subjective_submit_btn = QPushButton("Отправить ответ")
         # 按钮命名规则：submitSubjectiveButton{章节}_{小节}_9（后续绑定事件需用到）
         subjective_submit_btn.setObjectName(f"submitSubjectiveButton{chapter_idx}_{section_idx}_9")
         # 样式匹配现有提交按钮（颜色、 hover效果）
@@ -1306,4 +1306,5 @@ class EnterWindow(QWidget):
                                 if correct_radio:
                                     correct_radio.setStyleSheet("color: white; background-color: #4CAF50;")
                             break
+
 
