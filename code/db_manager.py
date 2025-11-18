@@ -128,7 +128,7 @@ class DatabaseManager:
     def get_quiz_questions(self, chapter_num, section_num):
         """读取指定章节-小节的8道题（仅支持section_num=1/2）"""
         try:
-            questions_db_path = r"C:\Users\Wang_Yihao\AppData\Local\ComputerVisionLearning\questions.db"
+            questions_db_path = os.path.join(os.environ['LOCALAPPDATA'], 'ComputerVisionLearning','questions.db')
             conn = sqlite3.connect(questions_db_path)
             cursor = conn.cursor()
             
@@ -526,4 +526,5 @@ class SubjectiveDBManager:
                 "ai_score": result[1],
                 "ai_feedback": result[2]
             }
+
         return None
