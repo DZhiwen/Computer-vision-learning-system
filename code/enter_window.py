@@ -27,7 +27,7 @@ class EnterWindow(QWidget):
         
         self.user_id = user_id
         self.db = DatabaseManager()
-
+        self.db.ensure_questions_exist()
         self.config = ConfigManager()
         self.lang_manager = LanguageManager(self.config.get('language', 'ru'))
 
