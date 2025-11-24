@@ -588,7 +588,24 @@ class SettingsWindow(QDialog):
         
         group.setLayout(layout)
         return group
-    
+        # 新增：加载/保存API密钥
+    def _load_api_keys(self):
+        config_path = os.path.join(get_user_data_dir(), "ai_api_keys.json")
+        if os.path.exists(config_path):
+            with open(config_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+
+    def save_api_keys(self):
+        config_path = os.path.join(get_user_data_dir(), "ai_api_keys.json")
+        api_keys = {
+            "deepseek": self.deepseek_api_input.text().strip(),
+            "qwen": self.qwen_api_input.text().strip()
+        }
+        with open(config_path, 'w', encoding='utf-8') as f:
+            json.dump(api_keys, f, indent=4)
+        QMessageBox.information(self, "成功", "API密钥已保存！")
+        
     def create_button_layout(self):
         """创建按钮布局"""
         layout = QHBoxLayout()

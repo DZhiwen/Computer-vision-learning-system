@@ -1,414 +1,229 @@
 """
-学习统计模块 - Statistics Manager (最终修复版)
-完全适配现有的 DatabaseManager 结构
+学习统计模块 - Statistics Manager
+负责从数据库提取统计数据，支持热力图、时长估算和章节进度
 """
 from datetime import datetime, timedelta
 import sqlite3
 import os
+import sys
 
 class StatisticsManager:
-    """统计管理器 - 完全兼容现有数据库"""
+    """统计管理器"""
     
     def __init__(self, user_id, db_path=None):
         self.user_id = user_id
         
-        # 如果没有提供数据库路径，使用默认路径
         if db_path is None:
             try:
-                from db_manager import get_user_data_dir
-                data_dir = get_user_data_dir()
-                self.db_path = os.path.join(data_dir, "cv_learning.db")
+                if sys.platform == 'win32':
+                    app_data = os.path.join(os.environ['LOCALAPPDATA'], 'ComputerVisionLearning')
+                else:
+                    app_data = os.path.expanduser('~/.local/share/ComputerVisionLearning')
+                
+                if not os.path.exists(app_data):
+                    os.makedirs(app_data)
+                self.db_path = os.path.join(app_data, "cv_learning.db")
             except:
                 self.db_path = "cv_learning.db"
         else:
             self.db_path = db_path
     
     def _get_connection(self):
-        """获取数据库连接"""
         try:
             conn = sqlite3.connect(self.db_path)
             conn.row_factory = sqlite3.Row
             return conn
         except Exception as e:
-            print(f"数据库连接失败: {e}")
+            print(f"Database connection error: {e}")
             return None
-    
-    def get_study_time_today(self):
-        """获取今日学习时长（分钟）
-        
-        由于原始数据库没有学习时长表，这里基于今天的答题记录估算
-        """
+
+    def get_total_stats(self):
+        """获取总体统计数据"""
         conn = self._get_connection()
         if not conn:
-            return 0
-        
+            return {"total": 0, "correct": 0, "accuracy": 0, "hours": 0}
+            
         try:
             cursor = conn.cursor()
-            today = datetime.now().strftime('%Y-%m-%d')
+            cursor.execute("SELECT COUNT(*) FROM quiz_answers WHERE user_id = ?", (self.user_id,))
+            total = cursor.fetchone()[0]
             
-            # 统计今天的答题数量，假设每题平均1分钟
-            cursor.execute("""
-                SELECT COUNT(*) as count
-                FROM quiz_answers
+            cursor.execute("SELECT COUNT(*) FROM quiz_answers WHERE user_id = ? AND is_correct = 1", (self.user_id,))
+            correct = cursor.fetchone()[0]
+            
+            accuracy = (correct / total * 100) if total > 0 else 0
+            
+            # 估算总学习时长 (小时)
+            # 假设：每题3分钟，每个章节步骤15分钟
+            cursor.execute("SELECT COUNT(*) FROM chapter_progress WHERE user_id = ?", (self.user_id,))
+            steps = cursor.fetchone()[0]
+            
+            total_minutes = (total * 3) + (steps * 15)
+            hours = round(total_minutes / 60, 1)
+            
+            return {
+                "total": total,
+                "correct": correct,
+                "accuracy": round(accuracy, 1),
+                "hours": hours
+            }
+        except Exception as e:
+            print(f"Error getting stats: {e}")
+            return {"total": 0, "correct": 0, "accuracy": 0, "hours": 0}
+        finally:
+            if conn: conn.close()
+
+    def get_activity_heatmap_data(self):
+        """获取热力图数据"""
+        conn = self._get_connection()
+        if not conn: return {}
+        
+        data = {}
+        try:
+            cursor = conn.cursor()
+            # 聚合 quiz_answers 和 chapter_progress 的活动
+            # 这里简化为只统计答题活动，你也可以用 UNION ALL 把 chapter_progress 加进来
+            query = """
+                SELECT date(updated_at) as day, COUNT(*) as count
+                FROM quiz_answers 
                 WHERE user_id = ? 
-                AND DATE(updated_at) = ?
-            """, (self.user_id, today))
-            
-            result = cursor.fetchone()
-            count = result['count'] if result else 0
-            
-            # 估算学习时长：每道题约1分钟，加上阅读时间
-            estimated_time = count * 1.5  # 1.5分钟/题
-            
-            return int(estimated_time) if estimated_time > 0 else 0
-            
+                AND updated_at > date('now', '-1 year')
+                GROUP BY date(updated_at)
+            """
+            try:
+                cursor.execute(query, (self.user_id,))
+                for row in cursor.fetchall():
+                    if row['day']: data[row['day']] = row['count']
+            except:
+                # Fallback for non-standard date strings
+                cursor.execute("SELECT updated_at FROM quiz_answers WHERE user_id = ?", (self.user_id,))
+                for row in cursor.fetchall():
+                    ts = str(row[0])
+                    if len(ts) >= 10:
+                        d = ts[:10]
+                        data[d] = data.get(d, 0) + 1
+            return data
         except Exception as e:
-            print(f"获取学习时长失败: {e}")
-            return 0
+            print(f"Error heatmap: {e}")
+            return {}
         finally:
-            conn.close()
-    
-    def get_study_streak(self):
-        """获取连续学习天数
-        
-        基于 chapter_progress 或 quiz_answers 表的更新时间计算
+            if conn: conn.close()
+
+    def get_weekly_study_time(self):
+        """
+        获取最近7天的学习时长（分钟）
+        返回: [('Mon', 45), ('Tue', 120), ...]
         """
         conn = self._get_connection()
-        if not conn:
-            return 0
+        if not conn: return []
         
+        # 初始化过去7天的数据结构
+        daily_minutes = {}
+        today = datetime.now().date()
+        days_list = []
+        
+        # 生成最近7天的日期列表（从6天前到今天）
+        for i in range(6, -1, -1):
+            d = today - timedelta(days=i)
+            d_str = d.strftime("%Y-%m-%d")
+            daily_minutes[d_str] = 0
+            # 俄语星期简写
+            weekday_ru = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"][d.weekday()]
+            days_list.append({"date": d_str, "label": weekday_ru, "value": 0})
+
         try:
             cursor = conn.cursor()
             
-            # 获取用户所有活动日期（去重）
+            # 1. 统计答题时间 (每题3分钟)
             cursor.execute("""
-                SELECT DISTINCT DATE(updated_at) as activity_date
-                FROM chapter_progress
-                WHERE user_id = ?
-                UNION
-                SELECT DISTINCT DATE(updated_at) as activity_date
-                FROM quiz_answers
-                WHERE user_id = ?
-                ORDER BY activity_date DESC
-            """, (self.user_id, self.user_id))
+                SELECT date(updated_at), COUNT(*) 
+                FROM quiz_answers 
+                WHERE user_id = ? AND updated_at > date('now', '-7 days')
+                GROUP BY date(updated_at)
+            """, (self.user_id,))
             
-            dates = [row['activity_date'] for row in cursor.fetchall()]
+            for row in cursor.fetchall():
+                d = row[0]
+                if d in daily_minutes:
+                    daily_minutes[d] += row[1] * 3
             
-            if not dates:
-                return 0
+            # 2. 统计章节学习时间 (每步15分钟)
+            cursor.execute("""
+                SELECT date(updated_at), COUNT(*) 
+                FROM chapter_progress 
+                WHERE user_id = ? AND updated_at > date('now', '-7 days')
+                GROUP BY date(updated_at)
+            """, (self.user_id,))
             
-            # 计算连续天数
-            streak = 1
-            today = datetime.now().date()
+            for row in cursor.fetchall():
+                d = row[0]
+                if d in daily_minutes:
+                    daily_minutes[d] += row[1] * 15
             
-            # 检查最近一次活动是否是今天或昨天
-            last_date = datetime.strptime(dates[0], '%Y-%m-%d').date()
-            days_since_last = (today - last_date).days
-            
-            if days_since_last > 1:
-                return 0  # 中断了
-            
-            # 计算连续天数
-            for i in range(len(dates) - 1):
-                date1 = datetime.strptime(dates[i], '%Y-%m-%d').date()
-                date2 = datetime.strptime(dates[i + 1], '%Y-%m-%d').date()
-                diff = (date1 - date2).days
+            # 填充结果列表
+            for item in days_list:
+                item["value"] = daily_minutes[item["date"]]
                 
-                if diff == 1:
-                    streak += 1
-                else:
-                    break
-            
-            return streak
+            return days_list
             
         except Exception as e:
-            print(f"获取连续天数失败: {e}")
-            return 0
+            print(f"Error weekly stats: {e}")
+            return days_list
         finally:
-            conn.close()
-    
-    def get_completion_rate(self):
-        """获取课程完成率
-        
-        基于 chapter_progress 表中 completed=1 的记录
+            if conn: conn.close()
+
+    def get_chapter_progress_stats(self):
+        """
+        获取各章节进度
+        返回: {chapter_index: {'completed': 5, 'total': 20, 'percent': 25}, ...}
         """
         conn = self._get_connection()
-        if not conn:
-            return 0.0
+        stats = {}
+        
+        # 预定义每个章节的大致总任务数（或者你可以从 questions.db 动态获取）
+        # 这里为了演示效果，假设每个章节有不同数量的任务
+        chapter_totals = {1: 15, 2: 20, 3: 18, 4: 25, 5: 20, 6: 15, 7: 10}
+        chapter_names = {
+            1: "Введение", 
+            2: "Обработка изображений", 
+            3: "Признаки и дескрипторы", 
+            4: "Сегментация",
+            5: "Обнаружение объектов",
+            6: "Распознавание лиц",
+            7: "Нейронные сети"
+        }
+        
+        for i in range(1, 8):
+            stats[i] = {
+                "name": chapter_names.get(i, f"Глава {i}"),
+                "completed": 0,
+                "total": chapter_totals.get(i, 20),
+                "percent": 0
+            }
+            
+        if not conn: return stats
         
         try:
             cursor = conn.cursor()
-            
-            # 统计已完成的步骤数
+            # 统计已完成的步骤
             cursor.execute("""
-                SELECT COUNT(*) as completed_count
-                FROM chapter_progress
+                SELECT chapter_index, COUNT(*) 
+                FROM chapter_progress 
                 WHERE user_id = ? AND completed = 1
-            """, (self.user_id,))
-            
-            result = cursor.fetchone()
-            completed_count = result['completed_count'] if result else 0
-            
-            # 假设总共有 7 章，每章 5 个步骤
-            total_steps = 7 * 5  # 35 个步骤
-            
-            completion_rate = (completed_count / total_steps) * 100 if total_steps > 0 else 0.0
-            
-            return round(completion_rate, 1)
-            
-        except Exception as e:
-            print(f"获取完成率失败: {e}")
-            return 0.0
-        finally:
-            conn.close()
-    
-    def get_quiz_accuracy(self):
-        """获取测验正确率
-        
-        基于 quiz_answers 表中的 is_correct 字段
-        """
-        conn = self._get_connection()
-        if not conn:
-            return 0.0
-        
-        try:
-            cursor = conn.cursor()
-            
-            # 统计总题数和正确题数
-            cursor.execute("""
-                SELECT 
-                    COUNT(*) as total,
-                    SUM(CASE WHEN is_correct = 1 THEN 1 ELSE 0 END) as correct
-                FROM quiz_answers
-                WHERE user_id = ?
-            """, (self.user_id,))
-            
-            result = cursor.fetchone()
-            
-            if not result or result['total'] == 0:
-                return 0.0
-            
-            total = result['total']
-            correct = result['correct'] if result['correct'] else 0
-            
-            accuracy = (correct / total) * 100
-            
-            return round(accuracy, 1)
-            
-        except Exception as e:
-            print(f"获取测验正确率失败: {e}")
-            return 0.0
-        finally:
-            conn.close()
-    
-    def get_weak_chapters(self):
-        """获取薄弱章节（正确率低于70%的章节）
-        
-        基于 quiz_answers 表按章节统计
-        """
-        conn = self._get_connection()
-        if not conn:
-            return []
-        
-        try:
-            cursor = conn.cursor()
-            
-            # 按章节统计正确率
-            cursor.execute("""
-                SELECT 
-                    chapter_index,
-                    COUNT(*) as total,
-                    SUM(CASE WHEN is_correct = 1 THEN 1 ELSE 0 END) as correct
-                FROM quiz_answers
-                WHERE user_id = ?
                 GROUP BY chapter_index
             """, (self.user_id,))
             
-            chapters = cursor.fetchall()
-            
-            weak_chapters = []
-            for chapter in chapters:
-                chapter_index = chapter['chapter_index']
-                total = chapter['total']
-                correct = chapter['correct'] if chapter['correct'] else 0
-                
-                accuracy = (correct / total) * 100 if total > 0 else 0
-                
-                if accuracy < 70:
-                    weak_chapters.append({
-                        'chapter': f"第{chapter_index + 1}章",
-                        'chapter_index': chapter_index,
-                        'accuracy': round(accuracy, 1),
-                        'total_questions': total,
-                        'correct_answers': correct
-                    })
-            
-            # 按正确率排序（从低到高）
-            weak_chapters.sort(key=lambda x: x['accuracy'])
-            
-            return weak_chapters
-            
-        except Exception as e:
-            print(f"获取薄弱章节失败: {e}")
-            return []
-        finally:
-            conn.close()
-    
-    def get_chapter_statistics(self):
-        """获取各章节详细统计"""
-        conn = self._get_connection()
-        if not conn:
-            return []
-        
-        try:
-            cursor = conn.cursor()
-            
-            # 按章节统计进度和测验情况
-            cursor.execute("""
-                SELECT 
-                    cp.chapter_index,
-                    COUNT(DISTINCT cp.step_index) as completed_steps,
-                    SUM(cp.completed) as total_completed,
-                    COUNT(qa.id) as quiz_count,
-                    SUM(CASE WHEN qa.is_correct = 1 THEN 1 ELSE 0 END) as quiz_correct
-                FROM chapter_progress cp
-                LEFT JOIN quiz_answers qa 
-                    ON cp.user_id = qa.user_id 
-                    AND cp.chapter_index = qa.chapter_index
-                WHERE cp.user_id = ?
-                GROUP BY cp.chapter_index
-                ORDER BY cp.chapter_index
-            """, (self.user_id,))
-            
-            chapters = []
             for row in cursor.fetchall():
-                chapter_index = row['chapter_index']
-                quiz_count = row['quiz_count'] if row['quiz_count'] else 0
-                quiz_correct = row['quiz_correct'] if row['quiz_correct'] else 0
-                
-                accuracy = (quiz_correct / quiz_count * 100) if quiz_count > 0 else 0
-                
-                chapters.append({
-                    'chapter': f"第{chapter_index + 1}章",
-                    'chapter_index': chapter_index,
-                    'completed_steps': row['completed_steps'],
-                    'quiz_count': quiz_count,
-                    'quiz_accuracy': round(accuracy, 1)
-                })
+                idx = row[0]
+                if idx in stats:
+                    stats[idx]["completed"] = row[1]
+                    # 简单的百分比计算
+                    pct = int((row[1] / stats[idx]["total"]) * 100)
+                    stats[idx]["percent"] = min(100, pct)
             
-            return chapters
-            
+            return stats
         except Exception as e:
-            print(f"获取章节统计失败: {e}")
-            return []
+            print(f"Error chapter stats: {e}")
+            return stats
         finally:
-            conn.close()
-    
-    def get_recent_activity(self, days=7):
-        """获取最近N天的活动统计"""
-        conn = self._get_connection()
-        if not conn:
-            return []
-        
-        try:
-            cursor = conn.cursor()
-            
-            # 获取最近N天的每日活动
-            start_date = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
-            
-            cursor.execute("""
-                SELECT 
-                    DATE(updated_at) as activity_date,
-                    COUNT(DISTINCT chapter_index) as chapters_studied,
-                    COUNT(*) as questions_answered,
-                    SUM(CASE WHEN is_correct = 1 THEN 1 ELSE 0 END) as correct_answers
-                FROM quiz_answers
-                WHERE user_id = ? AND DATE(updated_at) >= ?
-                GROUP BY DATE(updated_at)
-                ORDER BY activity_date DESC
-            """, (self.user_id, start_date))
-            
-            activities = []
-            for row in cursor.fetchall():
-                questions = row['questions_answered']
-                correct = row['correct_answers'] if row['correct_answers'] else 0
-                accuracy = (correct / questions * 100) if questions > 0 else 0
-                
-                activities.append({
-                    'date': row['activity_date'],
-                    'chapters_studied': row['chapters_studied'],
-                    'questions_answered': questions,
-                    'accuracy': round(accuracy, 1)
-                })
-            
-            return activities
-            
-        except Exception as e:
-            print(f"获取最近活动失败: {e}")
-            return []
-        finally:
-            conn.close()
-    
-    def get_learning_summary(self):
-        """获取学习总结（完整版）"""
-        return {
-            'study_time_today': self.get_study_time_today(),
-            'study_streak': self.get_study_streak(),
-            'completion_rate': self.get_completion_rate(),
-            'quiz_accuracy': self.get_quiz_accuracy(),
-            'weak_chapters': self.get_weak_chapters(),
-            'chapter_statistics': self.get_chapter_statistics(),
-            'recent_activity': self.get_recent_activity()
-        }
-    
-    def get_simple_summary(self):
-        """获取简单总结（用于仪表盘显示）"""
-        return {
-            'study_time_today': self.get_study_time_today(),
-            'study_streak': self.get_study_streak(),
-            'completion_rate': self.get_completion_rate(),
-            'quiz_accuracy': self.get_quiz_accuracy()
-        }
-
-
-# 测试代码
-if __name__ == "__main__":
-  print("=" * 60)
-  print("测试统计模块")
-  print("=" * 60)
-  
-  # 创建测试用户（假设 user_id = 1）
-  stats = StatisticsManager(user_id=1)
-  
-  print("\n1. 简单总结:")
-  summary = stats.get_simple_summary()
-  for key, value in summary.items():
-      print(f"   {key}: {value}")
-  
-  print("\n2. 薄弱章节:")
-  weak = stats.get_weak_chapters()
-  if weak:
-      for chapter in weak:
-          print(f"   {chapter['chapter']}: {chapter['accuracy']}%")
-  else:
-      print("   暂无数据")
-  
-  print("\n3. 章节统计:")
-  chapters = stats.get_chapter_statistics()
-  if chapters:
-      for chapter in chapters:
-          print(f"   {chapter['chapter']}: 完成{chapter['completed_steps']}步, "
-                f"答题{chapter['quiz_count']}题, 正确率{chapter['quiz_accuracy']}%")
-  else:
-      print("   暂无数据")
-  
-  print("\n4. 最近7天活动:")
-  activities = stats.get_recent_activity(7)
-  if activities:
-      for activity in activities:
-          print(f"   {activity['date']}: 学习{activity['chapters_studied']}章, "
-                f"答题{activity['questions_answered']}题, 正确率{activity['accuracy']}%")
-  else:
-      print("   暂无数据")
-  
-  print("\n✓ 测试完成")
+            if conn: conn.close()
