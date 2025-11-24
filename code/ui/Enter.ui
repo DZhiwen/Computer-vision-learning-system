@@ -558,7 +558,7 @@ font: 700 9pt &quot;Microsoft YaHei UI&quot;;
          </font>
         </property>
         <property name="currentIndex">
-         <number>20</number>
+         <number>19</number>
         </property>
         <widget class="QWidget" name="page1_1">
          <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -876,7 +876,7 @@ font: 700 9pt &quot;Microsoft YaHei UI&quot;;
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>560</width>
+                   <width>158</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -1783,7 +1783,7 @@ font: 700 9pt &quot;Microsoft YaHei UI&quot;;
                    <x>0</x>
                    <y>0</y>
                    <width>136</width>
-                   <height>4329</height>
+                   <height>4322</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_12">
@@ -1932,21 +1932,21 @@ IDE предоставляют более продвинутые функции 
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_6">
+                        <widget class="QRadioButton" name="radioButton1_2_1">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_7">
+                        <widget class="QRadioButton" name="radioButton1_2_7">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_28">
+                        <widget class="QRadioButton" name="radioButton1_2_28">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -1997,21 +1997,21 @@ IDE предоставляют более продвинутые функции 
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_29">
+                        <widget class="QRadioButton" name="radioButton1_2_29">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_30">
+                        <widget class="QRadioButton" name="radioButton1_2_30">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_31">
+                        <widget class="QRadioButton" name="radioButton1_2_31">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -2062,21 +2062,21 @@ IDE предоставляют более продвинутые функции 
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_32">
+                        <widget class="QRadioButton" name="radioButton1_2_32">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_33">
+                        <widget class="QRadioButton" name="radioButton1_2_33">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_34">
+                        <widget class="QRadioButton" name="radioButton1_2_34">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -2127,21 +2127,21 @@ IDE предоставляют более продвинутые функции 
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_35">
+                        <widget class="QRadioButton" name="radioButton1_2_35">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_36">
+                        <widget class="QRadioButton" name="radioButton1_2_36">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_37">
+                        <widget class="QRadioButton" name="radioButton1_2_37">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -2192,21 +2192,21 @@ IDE предоставляют более продвинутые функции 
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_38">
+                        <widget class="QRadioButton" name="radioButton1_2_38">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_39">
+                        <widget class="QRadioButton" name="radioButton1_2_39">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_40">
+                        <widget class="QRadioButton" name="radioButton1_2_40">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -2257,21 +2257,21 @@ IDE предоставляют более продвинутые функции 
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_41">
+                        <widget class="QRadioButton" name="radioButton1_2_41">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_42">
+                        <widget class="QRadioButton" name="radioButton1_2_42">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_43">
+                        <widget class="QRadioButton" name="radioButton1_2_43">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -2322,21 +2322,21 @@ IDE предоставляют более продвинутые функции 
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_44">
+                        <widget class="QRadioButton" name="radioButton1_2_44">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_45">
+                        <widget class="QRadioButton" name="radioButton1_2_45">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_46">
+                        <widget class="QRadioButton" name="radioButton1_2_46">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -2387,21 +2387,21 @@ IDE предоставляют более продвинутые функции 
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_47">
+                        <widget class="QRadioButton" name="radioButton1_2_47">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_48">
+                        <widget class="QRadioButton" name="radioButton1_2_48">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_49">
+                        <widget class="QRadioButton" name="radioButton1_2_49">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -2963,7 +2963,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -2984,21 +2984,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_50">
+                        <widget class="QRadioButton" name="radioButton2_1_50">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_51">
+                        <widget class="QRadioButton" name="radioButton2_1_51">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_52">
+                        <widget class="QRadioButton" name="radioButton2_1_52">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3049,21 +3049,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_53">
+                        <widget class="QRadioButton" name="radioButton2_1_53">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_54">
+                        <widget class="QRadioButton" name="radioButton2_1_54">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_55">
+                        <widget class="QRadioButton" name="radioButton2_1_55">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3114,21 +3114,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_56">
+                        <widget class="QRadioButton" name="radioButton2_1_56">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_57">
+                        <widget class="QRadioButton" name="radioButton2_1_57">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_58">
+                        <widget class="QRadioButton" name="radioButton2_1_58">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3179,21 +3179,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_59">
+                        <widget class="QRadioButton" name="radioButton2_1_59">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_60">
+                        <widget class="QRadioButton" name="radioButton2_1_60">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_61">
+                        <widget class="QRadioButton" name="radioButton2_1_61">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3244,21 +3244,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_62">
+                        <widget class="QRadioButton" name="radioButton2_1_62">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_63">
+                        <widget class="QRadioButton" name="radioButton2_1_63">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_64">
+                        <widget class="QRadioButton" name="radioButton2_1_64">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3309,21 +3309,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_65">
+                        <widget class="QRadioButton" name="radioButton2_1_65">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_66">
+                        <widget class="QRadioButton" name="radioButton2_1_66">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_67">
+                        <widget class="QRadioButton" name="radioButton2_1_67">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3374,21 +3374,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_68">
+                        <widget class="QRadioButton" name="radioButton2_1_68">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_69">
+                        <widget class="QRadioButton" name="radioButton2_1_69">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_70">
+                        <widget class="QRadioButton" name="radioButton2_1_70">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3439,21 +3439,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_71">
+                        <widget class="QRadioButton" name="radioButton2_1_71">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_72">
+                        <widget class="QRadioButton" name="radioButton2_1_72">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_73">
+                        <widget class="QRadioButton" name="radioButton2_1_73">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3742,8 +3742,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>435</width>
-                   <height>527</height>
+                   <width>554</width>
+                   <height>479</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -3839,7 +3839,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -3860,21 +3860,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_74">
+                        <widget class="QRadioButton" name="radioButton2_2_74">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_75">
+                        <widget class="QRadioButton" name="radioButton2_2_75">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_76">
+                        <widget class="QRadioButton" name="radioButton2_2_76">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3925,21 +3925,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_77">
+                        <widget class="QRadioButton" name="radioButton2_2_77">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_78">
+                        <widget class="QRadioButton" name="radioButton2_2_78">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_79">
+                        <widget class="QRadioButton" name="radioButton2_2_79">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -3990,21 +3990,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_80">
+                        <widget class="QRadioButton" name="radioButton2_2_80">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_81">
+                        <widget class="QRadioButton" name="radioButton2_2_81">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_82">
+                        <widget class="QRadioButton" name="radioButton2_2_82">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4055,21 +4055,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_83">
+                        <widget class="QRadioButton" name="radioButton2_2_83">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_84">
+                        <widget class="QRadioButton" name="radioButton2_2_84">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_85">
+                        <widget class="QRadioButton" name="radioButton2_2_85">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4120,21 +4120,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_86">
+                        <widget class="QRadioButton" name="radioButton2_2_86">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_87">
+                        <widget class="QRadioButton" name="radioButton2_2_87">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_88">
+                        <widget class="QRadioButton" name="radioButton2_2_88">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4185,21 +4185,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_89">
+                        <widget class="QRadioButton" name="radioButton2_2_89">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_90">
+                        <widget class="QRadioButton" name="radioButton2_2_90">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_91">
+                        <widget class="QRadioButton" name="radioButton2_2_91">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4250,21 +4250,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_92">
+                        <widget class="QRadioButton" name="radioButton2_2_92">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_93">
+                        <widget class="QRadioButton" name="radioButton2_2_93">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_94">
+                        <widget class="QRadioButton" name="radioButton2_2_94">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4315,21 +4315,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_95">
+                        <widget class="QRadioButton" name="radioButton2_2_95">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_96">
+                        <widget class="QRadioButton" name="radioButton2_2_96">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_97">
+                        <widget class="QRadioButton" name="radioButton2_2_97">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4475,8 +4475,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>88</width>
-                   <height>170</height>
+                   <width>566</width>
+                   <height>422</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_82">
@@ -4780,7 +4780,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -4801,21 +4801,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_122">
+                        <widget class="QRadioButton" name="radioButton3_1_122">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_123">
+                        <widget class="QRadioButton" name="radioButton3_1_123">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_124">
+                        <widget class="QRadioButton" name="radioButton3_1_124">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4866,21 +4866,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_125">
+                        <widget class="QRadioButton" name="radioButton3_1_125">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_126">
+                        <widget class="QRadioButton" name="radioButton3_1_126">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_127">
+                        <widget class="QRadioButton" name="radioButton3_1_127">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4931,21 +4931,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_128">
+                        <widget class="QRadioButton" name="radioButton3_1_128">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_129">
+                        <widget class="QRadioButton" name="radioButton3_1_129">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_130">
+                        <widget class="QRadioButton" name="radioButton3_1_130">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -4996,21 +4996,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_131">
+                        <widget class="QRadioButton" name="radioButton3_1_131">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_132">
+                        <widget class="QRadioButton" name="radioButton3_1_132">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_133">
+                        <widget class="QRadioButton" name="radioButton3_1_133">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5061,21 +5061,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_134">
+                        <widget class="QRadioButton" name="radioButton3_1_134">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_135">
+                        <widget class="QRadioButton" name="radioButton3_1_135">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_136">
+                        <widget class="QRadioButton" name="radioButton3_1_136">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5126,21 +5126,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_137">
+                        <widget class="QRadioButton" name="radioButton3_1_137">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_138">
+                        <widget class="QRadioButton" name="radioButton3_1_138">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_139">
+                        <widget class="QRadioButton" name="radioButton3_1_139">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5191,21 +5191,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_140">
+                        <widget class="QRadioButton" name="radioButton3_1_140">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_141">
+                        <widget class="QRadioButton" name="radioButton3_1_141">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_142">
+                        <widget class="QRadioButton" name="radioButton3_1_142">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5256,21 +5256,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_143">
+                        <widget class="QRadioButton" name="radioButton3_1_143">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_144">
+                        <widget class="QRadioButton" name="radioButton3_1_144">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_145">
+                        <widget class="QRadioButton" name="radioButton3_1_145">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5561,7 +5561,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -5582,21 +5582,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_146">
+                        <widget class="QRadioButton" name="radioButton3_2_146">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_147">
+                        <widget class="QRadioButton" name="radioButton3_2_147">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_148">
+                        <widget class="QRadioButton" name="radioButton3_2_148">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5647,21 +5647,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_149">
+                        <widget class="QRadioButton" name="radioButton3_2_149">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_150">
+                        <widget class="QRadioButton" name="radioButton3_2_150">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_151">
+                        <widget class="QRadioButton" name="radioButton3_2_151">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5712,21 +5712,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_152">
+                        <widget class="QRadioButton" name="radioButton3_2_152">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_153">
+                        <widget class="QRadioButton" name="radioButton3_2_153">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_154">
+                        <widget class="QRadioButton" name="radioButton3_2_154">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5777,21 +5777,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_155">
+                        <widget class="QRadioButton" name="radioButton3_2_155">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_156">
+                        <widget class="QRadioButton" name="radioButton3_2_156">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_157">
+                        <widget class="QRadioButton" name="radioButton3_2_157">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5842,21 +5842,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_158">
+                        <widget class="QRadioButton" name="radioButton3_2_158">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_159">
+                        <widget class="QRadioButton" name="radioButton3_2_159">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_160">
+                        <widget class="QRadioButton" name="radioButton3_2_160">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5907,21 +5907,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_161">
+                        <widget class="QRadioButton" name="radioButton3_2_161">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_162">
+                        <widget class="QRadioButton" name="radioButton3_2_162">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_163">
+                        <widget class="QRadioButton" name="radioButton3_2_163">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -5972,21 +5972,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_164">
+                        <widget class="QRadioButton" name="radioButton3_2_164">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_165">
+                        <widget class="QRadioButton" name="radioButton3_2_165">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_166">
+                        <widget class="QRadioButton" name="radioButton3_2_166">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -6037,21 +6037,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_167">
+                        <widget class="QRadioButton" name="radioButton3_2_167">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_168">
+                        <widget class="QRadioButton" name="radioButton3_2_168">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_169">
+                        <widget class="QRadioButton" name="radioButton3_2_169">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -6197,8 +6197,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>88</width>
-                   <height>170</height>
+                   <width>566</width>
+                   <height>422</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_83">
@@ -6603,7 +6603,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -6624,21 +6624,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_170">
+                        <widget class="QRadioButton" name="radioButton4_1_170">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_171">
+                        <widget class="QRadioButton" name="radioButton4_1_171">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_172">
+                        <widget class="QRadioButton" name="radioButton4_1_172">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -6689,21 +6689,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_173">
+                        <widget class="QRadioButton" name="radioButton4_1_173">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_174">
+                        <widget class="QRadioButton" name="radioButton4_1_174">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_175">
+                        <widget class="QRadioButton" name="radioButton4_1_175">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -6754,21 +6754,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_176">
+                        <widget class="QRadioButton" name="radioButton4_1_176">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_177">
+                        <widget class="QRadioButton" name="radioButton4_1_177">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_178">
+                        <widget class="QRadioButton" name="radioButton4_1_178">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -6819,21 +6819,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_179">
+                        <widget class="QRadioButton" name="radioButton4_1_179">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_180">
+                        <widget class="QRadioButton" name="radioButton4_1_180">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_181">
+                        <widget class="QRadioButton" name="radioButton4_1_181">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -6884,21 +6884,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_182">
+                        <widget class="QRadioButton" name="radioButton4_1_182">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_183">
+                        <widget class="QRadioButton" name="radioButton4_1_183">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_184">
+                        <widget class="QRadioButton" name="radioButton4_1_184">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -6949,21 +6949,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_185">
+                        <widget class="QRadioButton" name="radioButton4_1_185">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_186">
+                        <widget class="QRadioButton" name="radioButton4_1_186">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_187">
+                        <widget class="QRadioButton" name="radioButton4_1_187">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7014,21 +7014,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_188">
+                        <widget class="QRadioButton" name="radioButton4_1_188">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_189">
+                        <widget class="QRadioButton" name="radioButton4_1_189">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_190">
+                        <widget class="QRadioButton" name="radioButton4_1_190">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7079,21 +7079,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_191">
+                        <widget class="QRadioButton" name="radioButton4_1_191">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_192">
+                        <widget class="QRadioButton" name="radioButton4_1_192">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_193">
+                        <widget class="QRadioButton" name="radioButton4_1_193">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7488,7 +7488,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -7509,21 +7509,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_194">
+                        <widget class="QRadioButton" name="radioButton4_2_194">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_195">
+                        <widget class="QRadioButton" name="radioButton4_2_195">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_196">
+                        <widget class="QRadioButton" name="radioButton4_2_196">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7574,21 +7574,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_197">
+                        <widget class="QRadioButton" name="radioButton4_2_197">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_198">
+                        <widget class="QRadioButton" name="radioButton4_2_198">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_199">
+                        <widget class="QRadioButton" name="radioButton4_2_199">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7639,21 +7639,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_200">
+                        <widget class="QRadioButton" name="radioButton4_2_200">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_201">
+                        <widget class="QRadioButton" name="radioButton4_2_201">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_202">
+                        <widget class="QRadioButton" name="radioButton4_2_202">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7704,21 +7704,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_203">
+                        <widget class="QRadioButton" name="radioButton4_2_203">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_204">
+                        <widget class="QRadioButton" name="radioButton4_2_204">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_205">
+                        <widget class="QRadioButton" name="radioButton4_2_205">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7769,21 +7769,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_206">
+                        <widget class="QRadioButton" name="radioButton4_2_206">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_207">
+                        <widget class="QRadioButton" name="radioButton4_2_207">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_208">
+                        <widget class="QRadioButton" name="radioButton4_2_208">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7834,21 +7834,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_209">
+                        <widget class="QRadioButton" name="radioButton4_2_209">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_210">
+                        <widget class="QRadioButton" name="radioButton4_2_210">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_211">
+                        <widget class="QRadioButton" name="radioButton4_2_211">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7899,21 +7899,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_212">
+                        <widget class="QRadioButton" name="radioButton4_2_212">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_213">
+                        <widget class="QRadioButton" name="radioButton4_2_213">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_214">
+                        <widget class="QRadioButton" name="radioButton4_2_214">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -7964,21 +7964,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_215">
+                        <widget class="QRadioButton" name="radioButton4_2_215">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_216">
+                        <widget class="QRadioButton" name="radioButton4_2_216">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_217">
+                        <widget class="QRadioButton" name="radioButton4_2_217">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -8124,8 +8124,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>88</width>
-                   <height>170</height>
+                   <width>566</width>
+                   <height>422</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_84">
@@ -8638,8 +8638,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>0</y>
-                   <width>158</width>
+                   <y>-708</y>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -8660,21 +8660,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_218">
+                        <widget class="QRadioButton" name="radioButton5_1_218">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_219">
+                        <widget class="QRadioButton" name="radioButton5_1_219">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_220">
+                        <widget class="QRadioButton" name="radioButton5_1_220">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -8725,21 +8725,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_221">
+                        <widget class="QRadioButton" name="radioButton5_1_221">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_222">
+                        <widget class="QRadioButton" name="radioButton5_1_222">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_223">
+                        <widget class="QRadioButton" name="radioButton5_1_223">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -8790,21 +8790,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_224">
+                        <widget class="QRadioButton" name="radioButton5_1_224">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_225">
+                        <widget class="QRadioButton" name="radioButton5_1_225">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_226">
+                        <widget class="QRadioButton" name="radioButton5_1_226">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -8855,21 +8855,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_227">
+                        <widget class="QRadioButton" name="radioButton5_1_227">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_228">
+                        <widget class="QRadioButton" name="radioButton5_1_228">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_229">
+                        <widget class="QRadioButton" name="radioButton5_1_229">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -8920,21 +8920,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_230">
+                        <widget class="QRadioButton" name="radioButton5_1_230">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_231">
+                        <widget class="QRadioButton" name="radioButton5_1_231">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_232">
+                        <widget class="QRadioButton" name="radioButton5_1_232">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -8985,21 +8985,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_233">
+                        <widget class="QRadioButton" name="radioButton5_1_233">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_234">
+                        <widget class="QRadioButton" name="radioButton5_1_234">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_235">
+                        <widget class="QRadioButton" name="radioButton5_1_235">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -9050,21 +9050,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_236">
+                        <widget class="QRadioButton" name="radioButton5_1_236">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_237">
+                        <widget class="QRadioButton" name="radioButton5_1_237">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_238">
+                        <widget class="QRadioButton" name="radioButton5_1_238">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -9115,21 +9115,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_239">
+                        <widget class="QRadioButton" name="radioButton5_1_239">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_240">
+                        <widget class="QRadioButton" name="radioButton5_1_240">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_241">
+                        <widget class="QRadioButton" name="radioButton5_1_241">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -9280,8 +9280,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>419</width>
-                   <height>624</height>
+                   <width>556</width>
+                   <height>542</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_44">
@@ -9430,8 +9430,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>522</width>
-                   <height>1737</height>
+                   <width>554</width>
+                   <height>1721</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_55">
@@ -9539,8 +9539,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>116</width>
-                   <height>1862</height>
+                   <width>554</width>
+                   <height>598</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_57">
@@ -9633,7 +9633,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -9654,21 +9654,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_242">
+                        <widget class="QRadioButton" name="radioButton5_2_242">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_243">
+                        <widget class="QRadioButton" name="radioButton5_2_243">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_244">
+                        <widget class="QRadioButton" name="radioButton5_2_244">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -9719,21 +9719,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_245">
+                        <widget class="QRadioButton" name="radioButton5_2_245">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_246">
+                        <widget class="QRadioButton" name="radioButton5_2_246">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_247">
+                        <widget class="QRadioButton" name="radioButton5_2_247">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -9784,21 +9784,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_248">
+                        <widget class="QRadioButton" name="radioButton5_2_248">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_249">
+                        <widget class="QRadioButton" name="radioButton5_2_249">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_250">
+                        <widget class="QRadioButton" name="radioButton5_2_250">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -9849,21 +9849,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_251">
+                        <widget class="QRadioButton" name="radioButton5_2_251">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_252">
+                        <widget class="QRadioButton" name="radioButton5_2_252">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_253">
+                        <widget class="QRadioButton" name="radioButton5_2_253">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -9914,21 +9914,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_254">
+                        <widget class="QRadioButton" name="radioButton5_2_254">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_255">
+                        <widget class="QRadioButton" name="radioButton5_2_255">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_256">
+                        <widget class="QRadioButton" name="radioButton5_2_256">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -9979,21 +9979,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_257">
+                        <widget class="QRadioButton" name="radioButton5_2_257">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_258">
+                        <widget class="QRadioButton" name="radioButton5_2_258">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_259">
+                        <widget class="QRadioButton" name="radioButton5_2_259">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -10044,21 +10044,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_260">
+                        <widget class="QRadioButton" name="radioButton5_2_260">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_261">
+                        <widget class="QRadioButton" name="radioButton5_2_261">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_262">
+                        <widget class="QRadioButton" name="radioButton5_2_262">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -10109,21 +10109,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_263">
+                        <widget class="QRadioButton" name="radioButton5_2_263">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_264">
+                        <widget class="QRadioButton" name="radioButton5_2_264">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_265">
+                        <widget class="QRadioButton" name="radioButton5_2_265">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -10269,8 +10269,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>88</width>
-                   <height>170</height>
+                   <width>566</width>
+                   <height>422</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_85">
@@ -10431,8 +10431,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>152</width>
-                   <height>2169</height>
+                   <width>556</width>
+                   <height>1017</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_60">
@@ -10581,8 +10581,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>241</width>
-                   <height>482</height>
+                   <width>554</width>
+                   <height>450</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_64">
@@ -10674,8 +10674,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>0</y>
-                   <width>158</width>
+                   <y>-697</y>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -10696,21 +10696,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_290">
+                        <widget class="QRadioButton" name="radioButton6_1_290">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_291">
+                        <widget class="QRadioButton" name="radioButton6_1_291">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_292">
+                        <widget class="QRadioButton" name="radioButton6_1_292">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -10761,21 +10761,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_293">
+                        <widget class="QRadioButton" name="radioButton6_1_293">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_294">
+                        <widget class="QRadioButton" name="radioButton6_1_294">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_295">
+                        <widget class="QRadioButton" name="radioButton6_1_295">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -10826,21 +10826,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_296">
+                        <widget class="QRadioButton" name="radioButton6_1_296">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_297">
+                        <widget class="QRadioButton" name="radioButton6_1_297">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_298">
+                        <widget class="QRadioButton" name="radioButton6_1_298">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -10891,21 +10891,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_299">
+                        <widget class="QRadioButton" name="radioButton6_1_299">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_300">
+                        <widget class="QRadioButton" name="radioButton6_1_300">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_301">
+                        <widget class="QRadioButton" name="radioButton6_1_301">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -10956,21 +10956,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_302">
+                        <widget class="QRadioButton" name="radioButton6_1_302">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_303">
+                        <widget class="QRadioButton" name="radioButton6_1_303">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_304">
+                        <widget class="QRadioButton" name="radioButton6_1_304">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11021,21 +11021,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_305">
+                        <widget class="QRadioButton" name="radioButton6_1_305">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_306">
+                        <widget class="QRadioButton" name="radioButton6_1_306">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_307">
+                        <widget class="QRadioButton" name="radioButton6_1_307">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11086,21 +11086,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_308">
+                        <widget class="QRadioButton" name="radioButton6_1_308">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_309">
+                        <widget class="QRadioButton" name="radioButton6_1_309">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_310">
+                        <widget class="QRadioButton" name="radioButton6_1_310">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11151,21 +11151,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_311">
+                        <widget class="QRadioButton" name="radioButton6_1_311">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_312">
+                        <widget class="QRadioButton" name="radioButton6_1_312">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_313">
+                        <widget class="QRadioButton" name="radioButton6_1_313">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11560,7 +11560,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -11581,21 +11581,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_314">
+                        <widget class="QRadioButton" name="radioButton6_2_314">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_315">
+                        <widget class="QRadioButton" name="radioButton6_2_315">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_316">
+                        <widget class="QRadioButton" name="radioButton6_2_316">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11646,21 +11646,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_317">
+                        <widget class="QRadioButton" name="radioButton6_2_317">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_318">
+                        <widget class="QRadioButton" name="radioButton6_2_318">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_319">
+                        <widget class="QRadioButton" name="radioButton6_2_319">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11711,21 +11711,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_320">
+                        <widget class="QRadioButton" name="radioButton6_2_320">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_321">
+                        <widget class="QRadioButton" name="radioButton6_2_321">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_322">
+                        <widget class="QRadioButton" name="radioButton6_2_322">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11776,21 +11776,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_323">
+                        <widget class="QRadioButton" name="radioButton6_2_323">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_324">
+                        <widget class="QRadioButton" name="radioButton6_2_324">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_325">
+                        <widget class="QRadioButton" name="radioButton6_2_325">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11841,21 +11841,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_326">
+                        <widget class="QRadioButton" name="radioButton6_2_326">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_327">
+                        <widget class="QRadioButton" name="radioButton6_2_327">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_328">
+                        <widget class="QRadioButton" name="radioButton6_2_328">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11906,21 +11906,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_329">
+                        <widget class="QRadioButton" name="radioButton6_2_329">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_330">
+                        <widget class="QRadioButton" name="radioButton6_2_330">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_331">
+                        <widget class="QRadioButton" name="radioButton6_2_331">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -11971,21 +11971,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_332">
+                        <widget class="QRadioButton" name="radioButton6_2_332">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_333">
+                        <widget class="QRadioButton" name="radioButton6_2_333">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_334">
+                        <widget class="QRadioButton" name="radioButton6_3_334">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -12036,21 +12036,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_335">
+                        <widget class="QRadioButton" name="radioButton6_2_335">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_336">
+                        <widget class="QRadioButton" name="radioButton6_2_336">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_337">
+                        <widget class="QRadioButton" name="radioButton6_2_337">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -12196,8 +12196,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>111</width>
-                   <height>170</height>
+                   <width>566</width>
+                   <height>422</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_86">
@@ -12358,8 +12358,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>258</width>
-                   <height>477</height>
+                   <width>568</width>
+                   <height>424</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_70">
@@ -12508,8 +12508,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>217</width>
-                   <height>1570</height>
+                   <width>554</width>
+                   <height>762</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_72">
@@ -12602,7 +12602,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>158</width>
+                   <width>560</width>
                    <height>1148</height>
                   </rect>
                  </property>
@@ -12623,21 +12623,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_338">
+                        <widget class="QRadioButton" name="radioButton7_1_338">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_339">
+                        <widget class="QRadioButton" name="radioButton7_1_339">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_340">
+                        <widget class="QRadioButton" name="radioButton7_1_340">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -12688,21 +12688,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_341">
+                        <widget class="QRadioButton" name="radioButton7_1_341">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_342">
+                        <widget class="QRadioButton" name="radioButton7_1_342">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_343">
+                        <widget class="QRadioButton" name="radioButton7_1_343">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -12753,21 +12753,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_344">
+                        <widget class="QRadioButton" name="radioButton7_1_344">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_345">
+                        <widget class="QRadioButton" name="radioButton7_1_345">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_346">
+                        <widget class="QRadioButton" name="radioButton7_1_346">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -12818,21 +12818,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_347">
+                        <widget class="QRadioButton" name="radioButton7_1_347">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_348">
+                        <widget class="QRadioButton" name="radioButton7_1_348">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_349">
+                        <widget class="QRadioButton" name="radioButton7_1_349">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -12883,21 +12883,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_350">
+                        <widget class="QRadioButton" name="radioButton7_1_350">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_351">
+                        <widget class="QRadioButton" name="radioButton7_1_351">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_352">
+                        <widget class="QRadioButton" name="radioButton7_1_352">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -12948,21 +12948,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_353">
+                        <widget class="QRadioButton" name="radioButton7_1_353">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_354">
+                        <widget class="QRadioButton" name="radioButton7_1_354">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_355">
+                        <widget class="QRadioButton" name="radioButton7_1_355">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13013,21 +13013,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_356">
+                        <widget class="QRadioButton" name="radioButton7_1_356">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_357">
+                        <widget class="QRadioButton" name="radioButton7_1_357">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_358">
+                        <widget class="QRadioButton" name="radioButton7_1_358">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13078,21 +13078,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_359">
+                        <widget class="QRadioButton" name="radioButton7_1_359">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_360">
+                        <widget class="QRadioButton" name="radioButton7_1_360">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_361">
+                        <widget class="QRadioButton" name="radioButton7_1_361">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13243,8 +13243,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>333</width>
-                   <height>896</height>
+                   <width>556</width>
+                   <height>619</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_75">
@@ -13508,21 +13508,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_362">
+                        <widget class="QRadioButton" name="radioButton7_2_362">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_363">
+                        <widget class="QRadioButton" name="radioButton7_2_363">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_364">
+                        <widget class="QRadioButton" name="radioButton7_2_364">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13573,21 +13573,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_365">
+                        <widget class="QRadioButton" name="radioButton7_2_365">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_366">
+                        <widget class="QRadioButton" name="radioButton7_2_366">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_367">
+                        <widget class="QRadioButton" name="radioButton7_2_367">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13638,21 +13638,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_368">
+                        <widget class="QRadioButton" name="radioButton7_2_368">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_369">
+                        <widget class="QRadioButton" name="radioButton7_2_369">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_370">
+                        <widget class="QRadioButton" name="radioButton7_2_370">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13703,21 +13703,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_371">
+                        <widget class="QRadioButton" name="radioButton7_2_371">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_372">
+                        <widget class="QRadioButton" name="radioButton7_2_372">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_373">
+                        <widget class="QRadioButton" name="radioButton7_2_373">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13768,21 +13768,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_374">
+                        <widget class="QRadioButton" name="radioButton7_2_374">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_375">
+                        <widget class="QRadioButton" name="radioButton7_2_375">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_376">
+                        <widget class="QRadioButton" name="radioButton7_2_376">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13833,21 +13833,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_377">
+                        <widget class="QRadioButton" name="radioButton7_2_377">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_378">
+                        <widget class="QRadioButton" name="radioButton7_2_378">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_379">
+                        <widget class="QRadioButton" name="radioButton7_2_379">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13898,21 +13898,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_380">
+                        <widget class="QRadioButton" name="radioButton7_2_380">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_381">
+                        <widget class="QRadioButton" name="radioButton7_2_381">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_382">
+                        <widget class="QRadioButton" name="radioButton7_2_382">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -13963,21 +13963,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_383">
+                        <widget class="QRadioButton" name="radioButton7_2_383">
                          <property name="text">
                           <string>2...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_384">
+                        <widget class="QRadioButton" name="radioButton7_2_384">
                          <property name="text">
                           <string>3...</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QRadioButton" name="radioButton1_1_385">
+                        <widget class="QRadioButton" name="radioButton7_2_385">
                          <property name="text">
                           <string>4...</string>
                          </property>
@@ -14123,8 +14123,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>566</width>
-                   <height>422</height>
+                   <width>111</width>
+                   <height>170</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_88">
