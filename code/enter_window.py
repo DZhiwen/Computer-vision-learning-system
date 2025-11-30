@@ -780,43 +780,41 @@ class EnterWindow(QWidget):
 
     def load_quiz_questions_to_ui(self):
         """动态填充数据库题目到UI（适配UI原始命名，不改动UI）"""
-        for chapter_idx in range(1, 8):  # 1-7章
-            for section_idx in [1, 2]:  # 仅x.1和x.2小节有测试题
-                # 从数据库获取当前章节-小节的题目
+        for chapter_idx in range(1, 8):
+            for section_idx in [1, 2]:
                 questions = self.db.get_quiz_questions(chapter_idx, section_idx)
                 if not questions:
-                    continue  # 无题目则保留占位符
+                    continue
                 
-                # 遍历8道题（UI固定8道）
                 for q_num in range(1, 9):
-                    # 找到当前题目的容器groupBox
                     group_box_name = f"groupBox{chapter_idx}_{section_idx}_{q_num}"
                     group_box = self.ui.findChild(QWidget, group_box_name)
                     if not group_box:
-                        print(f"未找到题目容器：{group_box_name}")
                         continue
                     
-                    # 关键修改：获取该groupBox下所有RadioButton（适配UI原始命名）
                     radios = group_box.findChildren(QRadioButton)
-                    # 过滤无效组件，确保只保留4个选项
                     radios = [r for r in radios if r.objectName().startswith(f"radioButton{chapter_idx}_{section_idx}_")]
                     if len(radios) != 4:
-                        print(f"警告：{group_box_name} 仅找到 {len(radios)} 个选项（需4个）")
                         continue
                     
-                    # 填充题目文本（groupBox标题）
                     q_data = questions.get(q_num, {})
                     if q_data:
                         group_box.setTitle(q_data.get("text", f"Вопрос {q_num}"))
-                        # 按顺序填充4个选项（A→第一个RadioButton，B→第二个，以此类推）
                         options = q_data.get("options", {"A":"", "B":"", "C":"", "D":""})
                         for i, (opt_key, opt_text) in enumerate(options.items()):
                             if i < len(radios):
                                 radios[i].setText(f"{opt_key}. {opt_text}")
-                                # --------------------------
-                    # 新增：加载完选择题后，调用主观题UI创建方法
-                    # --------------------------
+                                
+                                # === 以下是新增的代码块 ===
+                                # 修复新用户已选问题：强制重置状态
+                                radios[i].setAutoExclusive(False) # 暂时关闭互斥，以便取消选中
+                                radios[i].setChecked(False)       # 取消选中
+                                radios[i].setAutoExclusive(True)  # 恢复互斥
+                                radios[i].setStyleSheet("")       # 清除颜色样式
+                                # ========================
+                
                 self.add_subjective_question_ui(chapter_idx, section_idx)
+
     def add_subjective_question_ui(self, chapter_idx, section_idx):
         """
         为指定章节-小节动态创建第9题主观题UI（无需改Enter.ui）
@@ -991,11 +989,12 @@ class EnterWindow(QWidget):
             chapter_num=chapter_idx,
             section_num=section_idx
         )
+    # --- 修改后 (请替换为以下代码) ---
         if not subjective_q:
             # 无评分标准时，仅保存答案，不进行AI评分
             QMessageBox.information(
                 self, "Успех", 
-                f"Ответы на субъективные вопросы сохранены！\n（глава{chapter_idx}Раздел{section_idx}В настоящее время критерии оценки отсутствуют, поэтому оценка с помощью искусственного интеллекта невозможна.）"
+                f"Ответы на субъективные вопросы сохранены!\n(Глава {chapter_idx}, Раздел {section_idx}: В настоящее время критерии оценки отсутствуют, поэтому оценка с помощью искусственного интеллекта невозможна.)"
             )
             # 更新本地答题记录（用于后续恢复）
             self._update_local_subjective_record(chapter_idx, section_idx, user_answer)
@@ -1306,4 +1305,3 @@ class EnterWindow(QWidget):
                                 if correct_radio:
                                     correct_radio.setStyleSheet("color: white; background-color: #4CAF50;")
                             break
-
