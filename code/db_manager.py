@@ -46,6 +46,7 @@ class SubjectiveDBManager:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
             
+            # 题目表
             cursor.execute('''
             CREATE TABLE IF NOT EXISTS subjective_questions (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -54,6 +55,20 @@ class SubjectiveDBManager:
                 question_text TEXT NOT NULL,
                 scoring_criteria TEXT,
                 UNIQUE(chapter_num, section_num)
+            )''')
+
+            # 用户回答表 (新增)
+            cursor.execute('''
+            CREATE TABLE IF NOT EXISTS user_subjective_answers (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                chapter_num INTEGER NOT NULL,
+                section_num INTEGER NOT NULL,
+                user_answer TEXT,
+                ai_score INTEGER,
+                ai_feedback TEXT,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                UNIQUE(user_id, chapter_num, section_num)
             )''')
             
             conn.commit()
@@ -77,9 +92,20 @@ class SubjectiveDBManager:
             conn.close()
             
             if result:
+                # 解析评分标准JSON
+                criteria = result[1]
+                try:
+                    if criteria:
+                        criteria = json.loads(criteria)
+                except:
+                    pass
+
                 return {
+                    "text": result[0], # 统一键名为 text
                     "question_text": result[0],
-                    "scoring_criteria": result[1]
+                    "score_criteria": criteria, # 统一键名为 score_criteria
+                    "scoring_criteria": criteria,
+                    "full_score": 10 # 默认满分10分，也可以存储在数据库中
                 }
             return None
         except Exception as e:
@@ -92,6 +118,10 @@ class SubjectiveDBManager:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
             
+            # 确保存储为JSON字符串
+            if isinstance(scoring_criteria, dict):
+                scoring_criteria = json.dumps(scoring_criteria, ensure_ascii=False)
+
             cursor.execute('''
             INSERT OR REPLACE INTO subjective_questions 
             (chapter_num, section_num, question_text, scoring_criteria)
@@ -104,6 +134,73 @@ class SubjectiveDBManager:
         except Exception as e:
             print(f"保存主观题失败: {e}")
             return False
+
+    def save_user_subjective_answer(self, user_id, chapter_num, section_num, user_answer):
+        """保存用户主观题答案"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # 使用 INSERT OR REPLACE 或 ON CONFLICT UPDATE
+            cursor.execute('''
+            INSERT INTO user_subjective_answers (user_id, chapter_num, section_num, user_answer, updated_at)
+            VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
+            ON CONFLICT(user_id, chapter_num, section_num) DO UPDATE SET
+            user_answer=excluded.user_answer,
+            updated_at=CURRENT_TIMESTAMP
+            ''', (user_id, chapter_num, section_num, user_answer))
+            
+            conn.commit()
+            conn.close()
+            return True
+        except Exception as e:
+            print(f"保存用户主观题答案失败: {e}")
+            return False
+
+    def save_ai_score(self, user_id, chapter_num, section_num, ai_score, ai_feedback):
+        """保存AI评分结果"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute('''
+            UPDATE user_subjective_answers
+            SET ai_score = ?, ai_feedback = ?, updated_at = CURRENT_TIMESTAMP
+            WHERE user_id = ? AND chapter_num = ? AND section_num = ?
+            ''', (ai_score, ai_feedback, user_id, chapter_num, section_num))
+            
+            conn.commit()
+            conn.close()
+            return True
+        except Exception as e:
+            print(f"保存AI评分失败: {e}")
+            return False
+            
+    def get_user_subjective_answer(self, user_id, chapter_num, section_num):
+        """获取用户的主观题答案和评分"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute('''
+            SELECT user_answer, ai_score, ai_feedback
+            FROM user_subjective_answers
+            WHERE user_id = ? AND chapter_num = ? AND section_num = ?
+            ''', (user_id, chapter_num, section_num))
+            
+            result = cursor.fetchone()
+            conn.close()
+            
+            if result:
+                return {
+                    "user_answer": result[0],
+                    "ai_score": result[1],
+                    "ai_feedback": result[2]
+                }
+            return None
+        except Exception as e:
+            print(f"获取用户主观题答案失败: {e}")
+            return None
 
 
 class DatabaseManager:
